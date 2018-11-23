@@ -1,0 +1,36 @@
+{
+    "author": "Marina Miyaoka <miyaokamarina@gmail.com> (https://t.me/miyaokamarina)",
+    "repository": "anireact/ncest",
+    "private": true,
+    "workspaces": [
+        "@ncest/*"
+    ],
+    "scripts": {
+        "lint": "eslint --ext '.js,.ts' -f ./node_modules/eslint-codeframe-formatter . && prettier --list-different './**/*.{js,jsx,ts,tsx,css,less,scss,html,json,md}'",
+        "fix": "eslint --fix --ext '.js,.ts' -f ./node_modules/eslint-codeframe-formatter . && prettier --write './**/*.{js,jsx,ts,tsx,css,less,scss,html,json,md}'"
+    },
+    "devDependencies": {
+        "@anireact/babel-config": "^1.0.0-wip.8",
+        "@anireact/babel-preset": "^1.0.0-wip.8",
+        "@anireact/commitlint-config": "^1.0.0-wip.8",
+        "@anireact/eslint-config": "^1.0.0-wip.8",
+        "@anireact/lerna-config": "^1.0.0-wip.8",
+        "@anireact/new": "^1.0.0-wip.8",
+        "@anireact/prettier-config": "^1.0.0-wip.8",
+        "@anireact/typescript-config": "^1.0.0-wip.8",
+        "@babel/cli": "^7.1.5",
+        "@babel/core": "^7.1.6",
+        "@babel/runtime": "^7.1.5",
+        "@commitlint/cli": "^7.2.1",
+        "babel-eslint": "^10.0.1",
+        "core-js": "^2.5.7",
+        "dedent": "^0.7.0",
+        "enquirer": "^2.0.7",
+        "eslint": "^5.9.0",
+        "eslint-codeframe-formatter": "^1.0.2",
+        "lerna": "^3.4.3",
+        "mkdirp": "^0.5.1",
+        "prettier": "^1.15.2",
+        "typescript": "^3.2.0-rc"
+    }
+}
